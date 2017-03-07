@@ -1,10 +1,6 @@
-/**
- * Created by reawmarco on 06/03/17.
- */
-
 import React, { PropTypes } from 'react'
 
-const link = ({ active, children, onClick }) => {
+const Link = ({ active, children, onClick }) => {
     if (active) {
         return <span>{children}</span>
     }
@@ -21,10 +17,10 @@ const link = ({ active, children, onClick }) => {
     )
 }
 
-link.propTypes = {
+Link.propTypes = {
     active: PropTypes.bool.isRequired,
     children: PropTypes.node.isRequired,
     onClick: PropTypes.func.isRequired
 }
 
-export default link
+export default Link

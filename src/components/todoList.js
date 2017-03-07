@@ -1,11 +1,7 @@
-/**
- * Created by reawmarco on 06/03/17.
- */
-
 import React, { PropTypes } from 'react'
-import Todo from './Todo'
+import Todo from './todo'
 
-const todolists = ({ todos, onTodoClick }) => (
+const TodoList = ({ todos, onTodoClick }) => (
     <ul>
         {todos.map(todo =>
             <Todo
@@ -17,7 +13,7 @@ const todolists = ({ todos, onTodoClick }) => (
     </ul>
 )
 
-todolists.propTypes = {
+TodoList.propTypes = {
     todos: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number.isRequired,
         completed: PropTypes.bool.isRequired,
@@ -26,4 +22,4 @@ todolists.propTypes = {
     onTodoClick: PropTypes.func.isRequired
 }
 
-export default todolists
+export default TodoList

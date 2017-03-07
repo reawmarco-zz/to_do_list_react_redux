@@ -1,8 +1,4 @@
-/**
- * Created by reawmarco-pc on 03/03/17.
- */
-
-const reducers= (state = {}, action) => {
+const todo = (state = {}, action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return {
@@ -24,7 +20,7 @@ const reducers= (state = {}, action) => {
     }
 }
 
-const reducers = (state = [], action) => {
+const todos = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return [
@@ -40,4 +36,4 @@ const reducers = (state = [], action) => {
     }
 }
 
-export default reducers
+export default todos

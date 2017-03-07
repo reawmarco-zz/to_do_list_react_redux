@@ -1,7 +1,3 @@
-/**
- * Created by reawmarco on 06/03/17.
- */
-
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'

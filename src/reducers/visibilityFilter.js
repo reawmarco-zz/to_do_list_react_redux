@@ -1,7 +1,3 @@
-/**
- * Created by reawmarco on 06/03/17.
- */
-
 const visibilityFilter = (state = 'SHOW_ALL', action) => {
     switch (action.type) {
         case 'SET_VISIBILITY_FILTER':

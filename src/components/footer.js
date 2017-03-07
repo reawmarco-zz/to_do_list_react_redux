@@ -1,12 +1,7 @@
-/**
- * Created by reawmarco on 06/03/17.
- */
-
-
 import React from 'react'
-import FilterLink from '../containers/FilterLink'
+import FilterLink from '../containers/filterLink'
 
-const footer = () => (
+const Footer = () => (
     <p>
         Show:
         {" "}
@@ -24,4 +19,4 @@ const footer = () => (
     </p>
 )
 
-export default footer
+export default Footer
