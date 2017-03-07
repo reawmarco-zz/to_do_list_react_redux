@@ -1,7 +1,13 @@
+/**
+ *  itens da lista de todos.
+ *  Está classe demonstra os itens da lista todos, se clicados os mesmos são grifados.
+ *
+ */
 import React, { PropTypes } from 'react'
 
 const Todo = ({ onClick, completed, text }) => (
-    <li
+
+    <li className="list-group-item"
         onClick={onClick}
         style={{
             textDecoration: completed ? 'line-through' : 'none'

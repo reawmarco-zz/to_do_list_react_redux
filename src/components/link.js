@@ -1,8 +1,12 @@
+/**
+ *
+ *
+ */
 import React, { PropTypes } from 'react'
 
 const Link = ({ active, children, onClick }) => {
     if (active) {
-        return <span>{children}</span>
+        return <span className="btn btn-default btn">{children}</span>
     }
 
     return (
@@ -11,7 +15,7 @@ const Link = ({ active, children, onClick }) => {
                e.preventDefault()
                onClick()
            }}
-        >
+            className="btn btn-default btn">
             {children}
         </a>
     )

@@ -1,3 +1,9 @@
+/**
+ *  footer é um componente html, estão nele os botões de
+ *  filtro da aplicação.
+ *
+ */
+
 import React from 'react'
 import FilterLink from '../containers/filterLink'
 
@@ -8,11 +14,11 @@ const Footer = () => (
         <FilterLink filter="SHOW_ALL">
             All
         </FilterLink>
-        {", "}
+        {" "}
         <FilterLink filter="SHOW_ACTIVE">
             Active
         </FilterLink>
-        {", "}
+        {" "}
         <FilterLink filter="SHOW_COMPLETED">
             Completed
         </FilterLink>

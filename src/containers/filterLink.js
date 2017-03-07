@@ -1,3 +1,8 @@
+/**
+ * Conteiner responsável pela funcionalidade do filtro da aplicação.
+ *
+ */
+
 import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../actions'
 import Link from '../components/link'

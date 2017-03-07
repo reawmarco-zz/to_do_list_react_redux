@@ -1,3 +1,8 @@
+/**
+ * Conteiner responsável pela funcionalidade do filtro, implementa
+ * a visibilidade dos itens da lista, quando os mesmos estão grifados ou não.
+ *
+ */
 import { connect } from 'react-redux'
 import { toggleTodo } from '../actions'
 import TodoList from '../components/todoList'

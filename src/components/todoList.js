@@ -1,8 +1,14 @@
+/**
+ *  Lista do itens todos.
+ *  Está classe implementa a lista de itens.
+ *
+ */
+
 import React, { PropTypes } from 'react'
 import Todo from './todo'
 
 const TodoList = ({ todos, onTodoClick }) => (
-    <ul>
+    <ul className="list-group">
         {todos.map(todo =>
             <Todo
                 key={todo.id}
